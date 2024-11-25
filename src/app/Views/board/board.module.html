@@ -7,9 +7,10 @@
 }
 
 <main>
-    @for(val of squares; track val; let  index = $index){
+    @for(val of squares; track val; let index = $index){
         <app-square
             [value]="val"
+            [key]="index"
             (click)="makeMove(index)">
         >
         </app-square>

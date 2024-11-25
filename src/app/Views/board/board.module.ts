@@ -13,6 +13,8 @@ export class BoardComponent implements OnInit {
   squares: any[] | undefined;
   xIsNext: boolean | undefined;
   winner: string | undefined;
+  player1Count: number = 0;
+  player2Count: number = 0;
 
   constructor() {}
 
@@ -38,6 +40,11 @@ export class BoardComponent implements OnInit {
       }
 
       this.winner = this.calculateWinner();
+      if (this.winner == 'O') {
+        this.player2Count++;
+      } else if (this.winner == 'X') {
+        this.player1Count++;
+      }
     }
   }
 

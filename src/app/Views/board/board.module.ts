@@ -15,6 +15,7 @@ export class BoardComponent implements OnInit {
   winner: string | undefined;
   player1Count: number = 0;
   player2Count: number = 0;
+  isDraw: boolean = false;
 
   constructor() {}
 
@@ -26,6 +27,7 @@ export class BoardComponent implements OnInit {
     this.squares = Array(9).fill(null);
     this.winner = '';
     this.xIsNext = true;
+    this.isDraw = false;
   }
 
   get player() {
@@ -33,7 +35,7 @@ export class BoardComponent implements OnInit {
   }
 
   makeMove(idx: number) {
-    if (!this.winner) {
+    if (!this.winner && !this.isDraw) {
       if (this.squares && !this.squares[idx]) {
         this.squares.splice(idx, 1, this.player);
         this.xIsNext = !this.xIsNext;
@@ -44,6 +46,8 @@ export class BoardComponent implements OnInit {
         this.player2Count++;
       } else if (this.winner == 'X') {
         this.player1Count++;
+      } else if (this.squares && !this.squares.includes(null)) {
+        this.isDraw = true;
       }
     }
   }

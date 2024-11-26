@@ -1,4 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // /* You can add global styles to this file, and also import other style files */
 // * {
 //     background-color: black;
 // }
+
+body {
+    background: radial-gradient(circle, rgb(20, 20, 20) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+}

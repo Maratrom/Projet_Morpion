@@ -1,22 +1,28 @@
-<h1 class="text-3xl font-bold mb-4"> Current player: <span [ngClass]="{ 'text-red-600': player === 'X', 'text-blue-600': player === 'O' }">{{ player }}</span> </h1>
-<div>
-    <p>Player : X | {{ player1Count }} win{{ player1Count > 1 ? 's' : ''}}</p>
-    <p>Player : O| {{ player2Count }} win{{ player2Count > 1 ? 's' : ''}}</p>
-</div>
-@if(winner) {
-    <h2 class="text-3xl font-bold">
-        Winner: <span [ngClass]="{ 'text-red-600': winner === 'X', 'text-blue-600': winner === 'O' }">{{ winner }}</span>
-    </h2>
-}
-
-<main>
-    @for(val of squares; track val; let index = $index){
-        <app-square
-            [value]="val"
-            (click)="makeMove(index)">
-        >
-        </app-square>
+<div class="w-full flex items-center justify-center flex-col gap-4 py-4">
+    <h1 class="text-3xl font-bold mb-4"> Current player: <span [ngClass]="{ 'text-red-600': player === 'X', 'text-blue-600': player === 'O' }">{{ player }}</span> </h1>
+    <div>
+        <p>Player : X | {{ player1Count }} win{{ player1Count > 1 ? 's' : ''}}</p>
+        <p>Player : O | {{ player2Count }} win{{ player2Count > 1 ? 's' : ''}}</p>
+    </div>
+    @if(winner) {
+        <h2 class="text-3xl font-bold">
+            Winner: <span [ngClass]="{ 'text-red-600': winner === 'X', 'text-blue-600': winner === 'O' }">{{ winner }}</span>
+        </h2>
+    } @else if(isDraw) {
+        <h2 class="text-3xl font-bold text-gray-600">
+            It's a draw!
+        </h2>
     }
-</main>
 
-<button (click)="newGame()" class="bg-black text-white p-4 rounded-md m-4 hover:"> New Game </button>
+    <main class="main" [ngClass]="{'draw': isDraw, 'win-p1': winner === 'X', 'win-p2': winner === 'O'}">
+        @for(val of squares; track val; let index = $index){
+            <app-square
+                [value]="val"
+                (click)="makeMove(index)">
+            >
+            </app-square>
+        }
+    </main>
+
+    <button (click)="newGame()" class="bg-black text-white p-4 rounded-md m-4 hover:"> New Game </button>
+</div>

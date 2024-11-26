@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 150px 150px 150px;
     font-weight: 800;
     grid-gap: 0px;
     position: relative;
@@ -8,7 +8,7 @@ main {
 
 app-square {
     border: 1px solid #000;
-    height: 200px;
+    height: 150px;
 }
 
 .draw::after,
@@ -28,7 +28,7 @@ app-square {
 }
 
 .draw::after {
-    content: 'Its a Draw';
+    content: 'It\'s a Draw';
 }
 
 .win-p1::after {

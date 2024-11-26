@@ -7,9 +7,8 @@ Notre petit projet est un jeu de morpion classique (jouable à 2) et développé
 2. [Installation](#installation)
 3. [Utilisation](#utilisation)
 4. [Structure du Projet](#structure-du-projet)
-5. [Explication du Code](#explication-du-code)
-6. [Technologies](#technologies)
-7. [Auteurs](#auteurs)
+5. [Technologies](#technologies)
+6. [Auteurs](#auteurs)
 
 
 ## Fonctionnalités
@@ -50,13 +49,6 @@ Notre petit projet est un jeu de morpion classique (jouable à 2) et développé
 #### Components
 - **square** : Cases du morpion
 - **grid** : Grille du morpion
-
-
-## Explication du Code
-
-Les parties importantes du projet sont commentées mais voici un aperçu des principales fonctions et parties du code :
-
-### 1. Blablabla
 
 
 ## Technologies

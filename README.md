@@ -68,4 +68,4 @@ Les parties importantes du projet sont commentées mais voici un aperçu des pri
 
 
 ## Auteurs
-Développé par Maratrom, Swixos, ElieLaj, Titinite et JudIFruit en période de cours. Retrouvez plus de détails dans le dépôt [GitHub](https://github.com/Zboulabagualabamboula/Projet_Morpion).
+Développé par Maratrom, Swixos, ElieLaj, Titinite et JudIFruit en période de cours. Retrouvez plus de détails dans le dépôt [GitHub](https://github.com/Zboulabagualaaluobmab/Projet_Morpion).

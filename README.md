@@ -1,59 +1,68 @@
-# ProjetMorpion
+# Jeu de morpion
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+Notre petit projet est un jeu de morpion classique (jouable à 2) et développé en Angular. 
 
-## Development server
+## Table des Matières
+1. [Fonctionnalités](#fonctionnalités)
+2. [Installation](#installation)
+3. [Utilisation](#utilisation)
+4. [Structure du Projet](#structure-du-projet)
+5. [Explication du Code](#explication-du-code)
+6. [Technologies](#technologies)
+7. [Auteurs](#auteurs)
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## Fonctionnalités
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Créer une partie** : Possibilité de renseigner les pseudonymes des joueurs
+- **Jeu de morpion** : Jouer la partie de morpion classique
+- **Affichage du vainqueur** : Le vainqueur ou le cas d'égalité sont affichés à l'écran
+- **Réinitialiser la partie** : Un bouton est disponible pour recommencer une partie
+- **Compteur de score** : Si vous jouez plusieurs parties, vous pouvez suivre la progression du duel
+  
 
-## Code scaffolding
+## Installation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/Zboulabagualabamboula/Projet_Morpion
+   ```
+2. Lancez un serveur local (`ng serve` dans un terminal) et accédez à `http://localhost:4200/` depuis votre navigateur.
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Utilisation
 
-```bash
-ng generate --help
-```
+- **Page d'accueil** (`home`) : Ecran de création d'une nouvelle partie
+- **Jouer au morpion** (`board`) : Cliquez sur les cases du morpion pour y jouer (le joueur qui doit jouer est indiqué)
 
-## Building
 
-To build the project run:
+## Structure du Projet
 
-```bash
-ng build
-```
+- **app** : Fichiers principaux du projet
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+#### Vews
+- **home** : Page d'acceuil
+- **board** : Page de jeu
 
-## Running unit tests
+#### Components
+- **square** : Cases du morpion
+- **grid** : Grille du morpion
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
+## Explication du Code
 
-## Running end-to-end tests
+Les parties importantes du projet sont commentées mais voici un aperçu des principales fonctions et parties du code :
 
-For end-to-end (e2e) testing, run:
+### 1. Blablabla
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Technologies
 
-## Additional Resources
+- **Angular**
+- **TypeScript** : Gestion de la logique du jeu et des différents composants pour l'affichage
+- **HTML** : Affichage des éléments des différentes pages
+- **SCSS** : Style des différents éléments
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Auteurs
+Développé par Maratrom, Swixos, ElieLaj, Titinite et JudIFruit en période de cours. Retrouvez plus de détails dans le dépôt [GitHub](https://github.com/Zboulabagualabamboula/Projet_Morpion).

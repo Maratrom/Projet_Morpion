@@ -60,4 +60,4 @@ Notre petit projet est un jeu de morpion classique (jouable à 2) et développé
 
 
 ## Auteurs
-Développé par Maratrom, Swixos, ElieLaj, Titinite et JudIFruit en période de cours. Retrouvez plus de détails dans le dépôt [GitHub](https://github.com/Zboulabagualaaluobmab/Projet_Morpion).
+Développé par Swixos ([Timéo AVI](https://www.instagram.com/timeoavi)), ElieLaj ([Elie LAJOINIE](https://www.instagram.com/elie_lajoinie/)), Titinite ([Thibault LERAY](https://www.instagram.com/titiniteoff)), Maratrom ([Arthur LAGNEAUX](https://www.instagram.com/arthur_lagneaux)) et JudIFruit ([Julien PONS](https://www.instagram.com/_julien.pons_)) en période de cours. Retrouvez plus de détails dans le dépôt [GitHub](https://github.com/Zboulabagualaaluobmab/Projet_Morpion).

@@ -25,7 +25,7 @@ Notre petit projet est un jeu de morpion classique (jouable à 2) et développé
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/Zboulabagualabamboula/Projet_Morpion
+   git clone https://github.com/Zboulabagualaaluobmab/Projet_Morpion
    ```
 2. Lancez un serveur local et accédez à `http://localhost:4200/` depuis votre navigateur :
    ```bash

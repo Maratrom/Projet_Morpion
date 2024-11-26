@@ -1,10 +1,138 @@
-main {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-gap: 0px;
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #cce7ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+  
+h1, h2 {
+    text-align: center;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+.text-red-600 {
+    color: #ff5f5f;
+    animation: pulseRed 1s infinite;
+}
+  
+.text-blue-600 {
+    color: #5fafff;
+    animation: pulseBlue 1s infinite;
+}
+  
+@keyframes pulseRed {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+}
+  
+@keyframes pulseBlue {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+}
+  
+div p {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-app-square {
-    border: 1px solid #000;
-    height: 200px;
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
 }
+  
+app-square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+app-square:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+  
+app-square[data-value="X"] {
+    color: #ff5f5f;
+    animation: bounceX 0.5s ease-out;
+}
+  
+app-square[data-value="O"] {
+    color: #5fafff;
+    animation: bounceO 0.5s ease-out;
+}
+  
+@keyframes bounceX {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+@keyframes bounceO {
+    0% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+button {
+    background: linear-gradient(to right, #4caf50, #81c784);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+  
+button:hover {
+    background: linear-gradient(to right, #388e3c, #66bb6a);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}  

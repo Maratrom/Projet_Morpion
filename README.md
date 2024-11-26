@@ -27,7 +27,10 @@ Notre petit projet est un jeu de morpion classique (jouable à 2) et développé
    ```bash
    git clone https://github.com/Zboulabagualabamboula/Projet_Morpion
    ```
-2. Lancez un serveur local (`ng serve` dans un terminal) et accédez à `http://localhost:4200/` depuis votre navigateur.
+2. Lancez un serveur local et accédez à `http://localhost:4200/` depuis votre navigateur :
+   ```bash
+   ng serve
+   ```
 
 
 ## Utilisation

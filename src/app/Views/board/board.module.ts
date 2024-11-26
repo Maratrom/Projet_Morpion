@@ -44,6 +44,8 @@ export class BoardComponent implements OnInit {
         this.player2Count++;
       } else if (this.winner == 'X') {
         this.player1Count++;
+      } else if (this.squares && !this.squares.includes(null)) {
+        this.winner = 'Tie';
       }
     }
   }

@@ -1,7 +1,7 @@
 <h1 class="text-3xl font-bold mb-4"> Current player: <span [ngClass]="{ 'text-red-600': player === 'X', 'text-blue-600': player === 'O' }">{{ player }}</span> </h1>
 <div>
     <p>Player : X | {{ player1Count }} win{{ player1Count > 1 ? 's' : ''}}</p>
-    <p>Player : O| {{ player2Count }} win{{ player2Count > 1 ? 's' : ''}}</p>
+    <p>Player : O | {{ player2Count }} win{{ player2Count > 1 ? 's' : ''}}</p>
 </div>
 @if(winner) {
     <h2 class="text-3xl font-bold">
